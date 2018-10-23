@@ -1,4 +1,4 @@
-package guru.springframework.springrestclientexamples.domain;
+package guru.springframework.api.domain;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -6,14 +6,13 @@ import lombok.Setter;
 
 import java.io.Serializable;
 
-
 @Getter
 @Setter
 @NoArgsConstructor
-public class Billing implements Serializable {
-    private Card card;
-    private String iban;
-    private String swift;
+public class Card implements Serializable {
+    private String type;
+    private String number;
+    private ExpirationDate expiration_date;
 
     private final static long serialVersionUID = 1L;
 }

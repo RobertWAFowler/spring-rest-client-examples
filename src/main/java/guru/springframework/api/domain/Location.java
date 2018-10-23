@@ -1,4 +1,4 @@
-package guru.springframework.springrestclientexamples.domain;
+package guru.springframework.api.domain;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
